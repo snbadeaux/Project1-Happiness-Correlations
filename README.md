@@ -27,7 +27,7 @@ Christian Cantu
 5.	Stack Overflow - Where Developers Learn, Share, & Build Careers. (n.d.). Stack Overflow. https://stackoverflow.com/
 6.	https://chat.openai.com/: used to help debug problematic code
 
-
+### Analysis:<br>
 There is a positive correlation between Happiness and all three priorities chosen. These were seen in the regression lines and the r values. Saftey's R-value: 0.35, Cost of Living's R-value: 0.74, Local Purchasing Power's R-value: 0.74.<br>
 This makes sense because happiness and safety have a psychological correlation. Security and safety tend t go hand in hand. 
 Also, the value of one's money positively correlates with happiness. If people's hard-earned money goes further into buying things that they not only need but also want, then they tend to be happier. <br>
