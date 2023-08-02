@@ -28,15 +28,31 @@ Christian Cantu
 6.	https://chat.openai.com/: used to help debug problematic code
 
 ### Analysis:<br>
-There is a positive correlation between Happiness and all three priorities chosen. These were seen in the regression lines and the r values. Saftey's R-value: 0.35, Cost of Living's R-value: 0.74, Local Purchasing Power's R-value: 0.74.<br>
-This makes sense because happiness and safety have a psychological correlation. Security and safety tend t go hand in hand. 
-Also, the value of one's money positively correlates with happiness. If people's hard-earned money goes further into buying things that they not only need but also want, then they tend to be happier. <br>
+Datasets for happiness, cost of living (which included purchasing power), and crime (safety) were merged together producing one large merged dataset.
 
-The z-score shows that not all the points were clustered around the mean. We had many that were within two to three standard deviations away. This lets us know that the priorities we are analyzing do have an impact on where one would want to invest and visit as a tourist.<br>
+The safety index across each country was stated by city and so, to get a rough estimation of the country-wide safety index, the safety index across all the cities in a country were combined into an averaged for the country.
 
-The histograms, again prove that some countries prioritize different things compared to others, and all that has an effect on their happiness. The histograms also gave us a narrowed list of countries to further investigate.<br>
+The statistical outliers of the merged dataset for the values of happiness, cost of living, purchasing power, and safety were attributed to error in measurement and were removed from the dataset.
 
-We then took these countries and plotted the percent GDP change from the previous year for 40 years. There were a few outliers since some economies have changed drastically from the 1980s until now. We also narrowed in on the last 5 years and can clearly see the impact that the pandemic had on a global scale, even though only our top 17 countries are represented.<br>
+Correlations between happiness and safety, happiness and cost of living, and happiness and purchasing power were calculated using linear regressions. These correlations were 0.35, 0.74, and 0.74 respectively.
 
-Further analysis would need to be taken in order to pinpoint any trends in real estate, population, infrastructure, tourist attractions, and exchange rates depending on whether the client is a Real Estate Investment Company or a Travel Agency.<br>
+Because purchasing power had the same correlation to happiness as cost of living and it has more salience in terms of investing from the perspective of real estate companies and travel agencies, the cost of living was determined to be less useful and perhaps redundant in the presence of purchasing power.
 
+Z-scores were calculated for the happiness, safety, and purchasing power to assess whether the values varied sufficiently to assess the importance of each metric. If the z-scores were small (eg less than 1 standard deviation) for a metric, then it could be assumed that the metric was less relevant in comparison to the other two metrics.
+
+3D plots were created to visualize the z-scores and assess their variability. It turned out that all three metrics varied well beyond 1 standard deviation and, thereby, suggesting that each metric represented a tangible difference across the countries that shouldn't be discarded.
+
+From the 3 metrics happiness, safety, and purchasing power, the following 7 different prioritization combinations were considered and a histogram for each prioritization was created:
+  i. Equally weighted happiness, safety, and purchasing power
+  ii. Prioritized happiness, safety, then purchasing power
+  iii. Prioritized happiness, purchasing power, then safety
+  iv. Prioritized safety, happiness, then purchasing power
+  v. Prioritized safety, purchasing power, then happiness
+  vi. Prioritized purchasing power, safety, then happiness
+  vii. Prioritized purchasing power, happiness, then safety
+
+From those 7 prioritizations, a total of 17 unique countries were collected.
+
+A new dataset of Gross Domestic Product by country by year was introduced as a proxy for a comparison of growth of infrastructure among the 17 unique countries.
+
+A line plot showing the last 5 years of the top 17 countries revealed that top 5 growing countries were Saudi Arabia, Israel, Slovenia, United Arab Emirates, and Austria.
