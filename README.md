@@ -42,14 +42,14 @@ Z-scores were calculated for the happiness, safety, and purchasing power to asse
 
 3D plots were created to visualize the z-scores and assess their variability. It turned out that all three metrics varied well beyond 1 standard deviation and, thereby, suggesting that each metric represented a tangible difference across the countries that shouldn't be discarded.
 
-From the 3 metrics happiness, safety, and purchasing power, the following 7 different prioritization combinations were considered and a histogram for each prioritization was created:
-  i. Equally weighted happiness, safety, and purchasing power
-  ii. Prioritized happiness, safety, then purchasing power
-  iii. Prioritized happiness, purchasing power, then safety
-  iv. Prioritized safety, happiness, then purchasing power
-  v. Prioritized safety, purchasing power, then happiness
-  vi. Prioritized purchasing power, safety, then happiness
-  vii. Prioritized purchasing power, happiness, then safety
+From the 3 metrics happiness, safety, and purchasing power, the following 7 different prioritization combinations were considered and a histogram for each prioritization was created:<br>
+  i. Equally weighted happiness, safety, and purchasing power<br>
+  ii. Prioritized happiness, safety, then purchasing power<br>
+  iii. Prioritized happiness, purchasing power, then safety<br>
+  iv. Prioritized safety, happiness, then purchasing power<br>
+  v. Prioritized safety, purchasing power, then happiness<br>
+  vi. Prioritized purchasing power, safety, then happiness<br>
+  vii. Prioritized purchasing power, happiness, then safety<br>
 
 From those 7 prioritizations, a total of 17 unique countries were collected.
 
